@@ -22,5 +22,6 @@
     </head>
     <body class="antialiased">
      <h1>Hola desde laravel</h1>
+     <a href="{{ route('name')}}">Ir a la ruta con nombre</a>
     </body>
 </html>

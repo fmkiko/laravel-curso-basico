@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashBoard\PostController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,11 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return view('welcome');// retornamos la vista --> .php
 });
+
+Route::resource( '/post', App\Http\Controllers\DashBoard\PostController::class );
+
+
+
 
 
 
